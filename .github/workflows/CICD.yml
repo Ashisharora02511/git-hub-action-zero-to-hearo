@@ -5,7 +5,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
       - name: checkout code
-        run: echo"Code clone form git"
+        run: echo "Code clone form git"
   build:
      runs-on: ubuntu-latest
      steps:
