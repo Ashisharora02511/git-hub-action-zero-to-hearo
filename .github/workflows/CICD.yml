@@ -5,12 +5,12 @@ jobs:
    runs-on: ubuntu-latest
    steps:
       - name: checkout code
-        run: "Code clone form git"
+        run: echo"Code clone form git"
   build:
      runs-on: ubuntu-latest
      steps:
         - name: Build docker container
-          run: echo "Testting the container
+          run: echo "Testting the container"
   test:
     runs-on: ubuntu-latest
     steps:
