@@ -7,16 +7,19 @@ jobs:
       - name: checkout code
         run: echo "Code clone form git"
   build:
-     runs-on: ubuntu-latest
-     steps:
+   needs: [code] 
+   runs-on: ubuntu-latest
+   steps:
         - name: Build docker container
           run: echo "Testting the container"
   test:
+    needs: [build,code]
     runs-on: ubuntu-latest
     steps:
       - name: Test The Container
         run: echo "Testing the container"
   deploy:
+    needs: [build,code,test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy onserver
