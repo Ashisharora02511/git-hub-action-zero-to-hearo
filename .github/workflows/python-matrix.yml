@@ -16,7 +16,7 @@ jobs:
             with:
               python-version: "3.13"
           - name: install dependencies
-            run: pip install -r requriments.txt
+            run: pip install -r requirementsgit.txt
 
           - name: run linter
             run: flake8 app.py
