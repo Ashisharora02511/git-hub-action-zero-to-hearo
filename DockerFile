@@ -5,5 +5,5 @@ WORKDIR /app
 COPY . .
 
 RUN pip install -r reqiurements.txt
-
+    
 CMD ["python","app.py"]
