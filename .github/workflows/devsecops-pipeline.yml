@@ -6,12 +6,12 @@ jobs:
          
        
       
-          uses: .github/workflow/code-quality.yml
+          uses: ./.github/workflow/code-quality.yml
 
      secrets-scan:
        
-          uses: .github/workflow/secrets-scan.yml
+          uses: ./.github/workflow/secrets-scan.yml
      dependency-scan:
              uses: .github/workflow/dependency-scan.yml
      docker-scan:
-         uses: .github/workflow/docker-lint.yml
+         uses: ./.github/workflow/docker-lint.yml
