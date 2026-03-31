@@ -9,9 +9,10 @@ jobs:
        steps:
          - name: Code checkout
            uses: actions/checkout@v4
-         - name: Install Pip  Audit
-           run: pip install pip-audit
            with:
              python-version: "3.12"
+         - name: Install Pip  Audit
+           run: pip install pip-audit
+          
          - name: Audit Dependencies
            run: pip-audit -r requirements.txt
